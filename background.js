@@ -1,10 +1,8 @@
-console.log("hi from jake");
 chrome.browserAction.setBadgeText({text: "wo"});
 chrome.webRequest.onCompleted.addListener(function(details) {
   chrome.windows.getCurrent(function(win) {
     chrome.tabs.get(details.tabId, function(ctab) {
       if (win.focused && ctab.active) {
-        console.log("already focused");
         return;
       }
       chrome.tabs.sendMessage(details.tabId, "calendar_notify", function (resp) {

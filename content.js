@@ -1,4 +1,3 @@
-console.log("I AM CONTENT, HERE ME");
 var map = Array.prototype.map;
 var eleText = function (span) {
   return span.innerText + ' ';
