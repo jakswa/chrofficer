@@ -3,7 +3,7 @@ var eleText = function (span) {
   return span.innerText + ' ';
 };
 
-
+chrome.runtime.sendMessage("chrofficer-attached");
 chrome.runtime.onMessage.addListener(function(msg, sender, respond) {
   if (msg !== 'calendar_notify') return;
   // microsoft hates using IDs, apparently...

@@ -1,4 +1,7 @@
-chrome.browserAction.setBadgeText({text: "wo"});
+chrome.runtime.onMessage.addListener(function(msg, sender, respond) {
+  if (msg !== 'chrofficer-attached') return;
+  chrome.browserAction.setIcon({path: '/browser-action-icon-active.png'});
+});
 chrome.webRequest.onCompleted.addListener(function(details) {
   chrome.windows.getCurrent(function(win) {
     chrome.tabs.get(details.tabId, function(ctab) {

@@ -1,6 +1,6 @@
 {
   "name": "Chrofficer",
-  "version": "0.2",
+  "version": "0.3",
   "manifest_version": 2,
   "description": "Office 365 webmail thingy. Notifications or somethin'.",
   "browser_action": {
@@ -10,7 +10,7 @@
     "scripts": ["background.js"]
   },
   "content_scripts": [{
-    "matches": ["*://*/*"],
+    "matches": ["*://*.outlook.com/*"],
     "js": ["content.js"]
   }],
   "permissions": [
