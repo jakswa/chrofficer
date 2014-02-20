@@ -1,0 +1,26 @@
+{
+  "name": "Chrofficer",
+  "version": "0.2",
+  "manifest_version": 2,
+  "description": "Office 365 webmail thingy. Notifications or somethin'.",
+  "browser_action": {
+    "default_icon": "browser-action-icon-inactive.png" 
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["content.js"]
+  }],
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "notifications",
+    "*://*.outlook.com/"
+  ],
+  "web_accessible_resources" : [
+    "app.png",
+    "browser-action-icon-active.png" 
+  ]
+}
