@@ -21,4 +21,4 @@ chrome.webRequest.onCompleted.addListener(function(details) {
     });
   });
 
-}, {urls: ['*://*.outlook.com/owa*calendar_notify*']});
+}, {urls: ['*://*/owa*calendar_notify*']});
