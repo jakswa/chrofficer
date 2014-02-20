@@ -4,5 +4,5 @@ If you sit in Office 365 webmail all day (any `*.outlook.com` URL afaik), this e
 
 Currently relies on the mp3 request going out, and on certain DOM structure being in place (microsoft writes some horrid HTML). I would say it's not that great of a first extension, but maybe it'll provide insight to others.
 
-### what the notifications looks like:
+### what the notification looks like:
 ![thankjesus](https://f.cloud.github.com/assets/137793/2216499/76598b4c-9a0b-11e3-91e8-d3421bf38179.png)
